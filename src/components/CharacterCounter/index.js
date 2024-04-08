@@ -28,7 +28,7 @@ class CharacterCounter extends Component{
 
     onAddUserInput=event=>{
         event.preventDefault()
-        const{userInput}this.state 
+        const{userInput}=this.state 
         const newUserInput={
             id:v4(),
             userEnteredText:userInput,
