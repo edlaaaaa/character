@@ -40,14 +40,14 @@ class CharacterCounter extends Component{
         }))
     }
     renderUserInputs=()=>{
-        const {userInputsList}this.state
+        const {userInputsList}=this.state
         return userInputsList.length===0?(
             <EmptyImage
-            src=""
+            src="https://assets.ccbp.in/frontend/react-js/no-user-inputs-img.png"
             alt="no user inputs"/>
         ):(
             userInputsList.map(eachItem=>(
-                <UserInput key+{eachItem.id}userInputDetails={eachItem}/>
+                <UserInput key{eachItem.id}userInputDetails={eachItem}/>
             ))
         )
     }
