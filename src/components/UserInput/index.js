@@ -1,6 +1,6 @@
 import {UserInput, UserInputItem} from './styledComponents'
 
-const UserInput = props => {
+const userInput = props => {
   const {userInputDetails} = props
   const {UserEnteredDetails, textLength} = userInputDetails
 
