@@ -1,4 +1,4 @@
-import {UserInput, UserEnteredDetails} from './styledComponents'
+import {UserInput, UserInputItem} from './styledComponents'
 
 const UserInput = props => {
   const {userInputDetails} = props
