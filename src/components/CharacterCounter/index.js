@@ -36,18 +36,19 @@ class CharacterCounter extends Component {
     }
 
     this.setState(prevState => ({
-      userInputList: [...prevState.userInputsList, newUserInput],
+      userInputList: [...prevState.userInputList, newUserInput],
     }))
   }
+
   renderUserInputs = () => {
-    const {userInputsList} = this.state
-    return userInputsList.length === 0 ? (
+    const {userInputList} = this.state
+    return userInputList.length === 0 ? (
       <EmptyImage
         src="https://assets.ccbp.in/frontend/react-js/no-user-inputs-img.png"
         alt="no user inputs"
       />
     ) : (
-      userInputsList.map(eachItem => (
+      userInputList.map(eachItem => (
         <UserInput key={eachItem.id} userInputDetails={eachItem} />
       ))
     )

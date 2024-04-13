@@ -40,7 +40,7 @@ export const CounterHeading = styled.h1`
   margin-bottom: 60px;
 `
 
-export const AddInputContainer = styled.from`
+export const AddInputContainer = styled.form`
   display: flex;
 `
 

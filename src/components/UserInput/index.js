@@ -1,8 +1,8 @@
-import {UserInput, UserInputItem} from './styledComponents'
+import {UserEnteredDetails, UserInputItem} from './styledComponents'
 
-const userInput = props => {
+const UserInput = props => {
   const {userInputDetails} = props
-  const {UserEnteredDetails, textLength} = userInputDetails
+  const {userEnteredText, textLength} = userInputDetails
 
   return (
     <UserInputItem>
